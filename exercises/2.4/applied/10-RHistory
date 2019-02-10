@@ -1,0 +1,55 @@
+library(ISLR)
+attach(Boston)
+dim(boston)
+dim(Auto)
+library(MASS)
+?Boston
+pairs(Boston)
+pdf("10-pairwise.pdf",height=20, width=20)
+pairs(Boston)
+dev.off()
+?boston
+?Boston
+dim(Boston)
+?Boston
+fix(Boston)
+colnames(Boston)
+fix(data.frame(Boston$crim, Boston$tax, Boston$ptratio))
+subset_data=data.frame(Boston$crim, Boston$tax, Boston$ptratio)
+fix(subset-data)
+fix(subset_data)
+fix(Boston)
+fix(subset_data)
+subset_data=data.frame(Boston$crim, Boston$tax, Boston$ptratio)[order(Boston$crim),]
+fix(subset_data)
+summary(subset_data)
+subset_data=data.frame(Boston$crim, Boston$tax, Boston$ptratio)[order(Boston$tax),]
+summary(subset_data)
+fix(subset_data)
+subset_data=data.frame(Boston$crim, Boston$tax, Boston$ptratio)[order(Boston$ptratio),]
+fix(subset_data)
+sum(Boston$chas)
+Boston$chas
+nrows(Boston)
+numrows(Boston)
+dim(Boston)
+Boston$name
+Boston$NAME
+Boston$row.name
+head(df)
+df
+head(Boston)
+Boston[which.min(Boston$medv),]
+apply(Boston,2,range)
+summary(Boston)
+colnames(Boston)
+dim(Boston[Boston$rm > 7,])
+dim(Boston[Boston$rm > 8,])
+more_seven_rm=Boston[Boston$rm > 7,]
+more_eight_rm=Boston[Boston$rm > 8,]
+more_seven_rm
+dim(Boston[Boston$rm > 7,])
+dim(Boston[Boston$rm > 8,])
+more_eight_rm
+summary(Boston)
+savehistory("10-RHistory")
